@@ -43,6 +43,7 @@ export default function Home() {
           flex: 1;
         }
         footer {
+          margin-top: 50px;
           width: 100%;
           height: 64px;
           border-top: 1px solid #eaeaea;

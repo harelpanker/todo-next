@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TodoEditForm from "./TodoEditForm";
 
 import Checkbox from "@material-ui/core/Checkbox";

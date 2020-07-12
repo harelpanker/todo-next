@@ -4,12 +4,12 @@ import TodoList from "./TodoList";
 import uuid from "react-uuid";
 
 export default function TodoApp() {
-  const initialTodos = [
-    { id: uuid(), task: "Learn Next.js", completed: false },
-    { id: uuid(), task: "Master React", completed: false },
-  ];
+  // const initialTodos = [
+  //   { id: uuid(), task: "Learn Next.js", completed: false },
+  //   { id: uuid(), task: "Master React", completed: false },
+  // ];
   // State
-  const [todos, setTodos] = useState(initialTodos);
+  const [todos, setTodos] = useState([]);
   // Add Todo
   const addTodo = (newTodoTask) => {
     setTodos([...todos, { id: uuid(), task: newTodoTask, completed: false }]);

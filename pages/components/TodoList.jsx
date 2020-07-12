@@ -1,9 +1,11 @@
 import TodoItem from "./TodoItem";
 
-export default function TodoList({ todos, toggleTodo, deleteTodo, editTodo }) {
+export default function TodoList(props) {
+  const { todos, toggleTodo, deleteTodo, editTodo } = props;
+
   return (
     <ul>
-      {todos.map((todo) => (
+      {todos?.map((todo) => (
         <li key={todo.id}>
           <TodoItem
             {...todo}
